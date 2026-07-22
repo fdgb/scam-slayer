@@ -1,0 +1,25 @@
+# === 公开仓库不应暴露的内部/隐私文件 ===
+
+# 未审核的原始提交（可能含未脱敏 PII）
+pending_samples.md
+
+# 问卷/表单导出的原始 CSV（含用户原始输入）
+*_submissions.csv
+*.csv
+
+# 内部质量报告（作者调试用，非用户所需）
+quality_report.json
+
+# 已停用的旧表单（form.html 已被腾讯问卷替代）
+form.html
+
+# 作者本地笔记（非项目文件）
+TODO.md
+NOTES.md
+*.local.*
+
+# WorkBuddy 自动化/工作区内部记忆（不应进公开仓库）
+.workbuddy/
+
+# 训练流水线原始采集队列（未审核原始数据，非用户所需，按隐私红线不进公开仓库）
+references/collected_data/

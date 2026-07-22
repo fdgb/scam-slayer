@@ -1,0 +1,43 @@
+{
+  "version": "v2026.07.20.2",
+  "updated_at": "2026-07-20T12:57:31.341680+00:00",
+  "file_count": 7,
+  "files": {
+    "2026-07-20-collected-cases.md": {
+      "sha256": "100b02cc2e207beed430e347768c0d651b1124ffbbe1619f6e400e0809b6b1bd",
+      "bytes": 22560
+    },
+    "2026-07-20-seedaudio-fake-domain.md": {
+      "sha256": "6899ad858545734d0a21c35331ffb7ce3b39df4fc031abac1bde833e6074e2f6",
+      "bytes": 3830
+    },
+    "case-library.md": {
+      "sha256": "84a9c8bc5343202eac4bba47edfe5fdf6a474c95fc3146cf04012dd2753184c0",
+      "bytes": 284471
+    },
+    "elderly-guide.md": {
+      "sha256": "de4809d7924c99852d6730bf27498d5d70b1c9e999c8d5408ec18b83d713bfef",
+      "bytes": 3338
+    },
+    "patterns.md": {
+      "sha256": "d1c1567fda1d167d9c52297ecb6e645fa71f524eb9a6e0536fbd29a86a5ca2fa",
+      "bytes": 9029
+    },
+    "phone-scam.md": {
+      "sha256": "7e9e2205bd423f588ab9b1128fbc2371f1c6e8cbfb3b0a28b4dd3829fc3cecdf",
+      "bytes": 5865
+    },
+    "wechat-patterns.md": {
+      "sha256": "2cecd282e0a22e14257c49c79931b2b286c08466cec17680cb102633a944ca0f",
+      "bytes": 3359
+    }
+  },
+  "changelog": "auto-built with quality gate",
+  "quality_gate": {
+    "status": "NEEDS_REVIEW",
+    "passed": 0,
+    "warnings": 1,
+    "fact_check_needed": 7,
+    "duplicates_flagged": 0
+  }
+}
