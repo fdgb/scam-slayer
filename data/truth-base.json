@@ -1,0 +1,1766 @@
+{
+  "version": 3,
+  "updatedAt": "2026-08-17",
+  "description": "营销号/虚假信息权威真相库。每条谣言指纹对应正确事实+权威机构背书，作为网站'权威背书纠正'模块数据源，也作为案例采集系统的'真相端投喂目标'。",
+  "authorityLevels": {
+    "1": "国家级监管/政府（最高可信，优先引用）",
+    "2": "国家级专业机构/权威学会",
+    "3": "权威媒体/事实核查平台"
+  },
+  "sources": {
+    "piyao": {
+      "name": "中国互联网联合辟谣平台",
+      "url": "https://www.piyao.org.cn",
+      "level": 1,
+      "verifyHint": "可在站内搜索关键词核验最新辟谣"
+    },
+    "kepuchina": {
+      "name": "科普中国",
+      "url": "https://www.kepuchina.cn",
+      "level": 1,
+      "verifyHint": "权威科普平台，国家卫健委等支持"
+    },
+    "nhc": {
+      "name": "国家卫生健康委员会",
+      "url": "https://www.nhc.gov.cn",
+      "level": 1,
+      "verifyHint": "国家健康政策与警示发布主体"
+    },
+    "cfsa": {
+      "name": "国家食品安全风险评估中心",
+      "url": "https://www.cfsa.net.cn",
+      "level": 1,
+      "verifyHint": "食品安全国家标准技术机构"
+    },
+    "cnsoc": {
+      "name": "中国营养学会",
+      "url": "https://www.cnsoc.org",
+      "level": 2,
+      "verifyHint": "食物相克等说法的权威证伪来源"
+    },
+    "cca": {
+      "name": "中国消费者协会",
+      "url": "https://www.cca.cn",
+      "level": 2,
+      "verifyHint": "消费陷阱/伪科学产品投诉与提示"
+    },
+    "nmpa": {
+      "name": "国家药品监督管理局",
+      "url": "https://www.nmpa.gov.cn",
+      "level": 1,
+      "verifyHint": "药品/医疗器械/保健品监管"
+    },
+    "cma": {
+      "name": "中华医学会",
+      "url": "https://www.cma.org.cn",
+      "level": 2,
+      "verifyHint": "医学专业权威学会"
+    },
+    "mps": {
+      "name": "公安部刑侦局（国家反诈中心 96110）",
+      "url": "https://www.mps.gov.cn",
+      "level": 1,
+      "verifyHint": "诈骗套路官方预警"
+    },
+    "who": {
+      "name": "世界卫生组织 WHO",
+      "url": "https://www.who.int",
+      "level": 1,
+      "verifyHint": "国际权威健康信息"
+    },
+    "fda": {
+      "name": "美国食品药品监督管理局 FDA",
+      "url": "https://www.fda.gov",
+      "level": 1,
+      "verifyHint": "美国药品/食品监管，'FDA-registered≠FDA-approved'"
+    },
+    "ftc": {
+      "name": "美国联邦贸易委员会 FTC",
+      "url": "https://www.ftc.gov",
+      "level": 1,
+      "verifyHint": "虚假广告/诈骗举报与科普"
+    },
+    "tencentfact": {
+      "name": "腾讯较真（事实查证）",
+      "url": "https://vp.fact.qq.com",
+      "level": 3,
+      "verifyHint": "中文事实核查平台"
+    },
+    "pbc": {
+      "name": "中国人民银行",
+      "url": "http://www.pbc.gov.cn",
+      "level": 1,
+      "verifyHint": "央行关于虚拟货币/征信/养老金的权威提示"
+    },
+    "moe": {
+      "name": "中华人民共和国教育部",
+      "url": "http://www.moe.gov.cn",
+      "level": 1,
+      "verifyHint": "教育政策与考试权威发布"
+    },
+    "mca": {
+      "name": "民政部",
+      "url": "http://www.mca.gov.cn",
+      "level": 1,
+      "verifyHint": "养老/补贴/社会组织政策发布"
+    },
+    "cac": {
+      "name": "中央网信办（国家网信办）",
+      "url": "http://www.cac.gov.cn",
+      "level": 1,
+      "verifyHint": "网络谣言/诈骗治理权威"
+    },
+    "samr": {
+      "name": "国家市场监督管理总局",
+      "url": "http://www.samr.gov.cn",
+      "level": 1,
+      "verifyHint": "市场行为/消费维权监管"
+    },
+    "xinhua": {
+      "name": "新华社",
+      "url": "http://www.news.cn",
+      "level": 3,
+      "verifyHint": "国家级权威媒体"
+    },
+    "csrc": {
+      "name": "中国证监会",
+      "url": "http://www.csrc.gov.cn",
+      "level": 1,
+      "verifyHint": "证券期货监管与投资者保护"
+    }
+  },
+  "entries": [
+    {
+      "id": "food-formaldehyde-fruit",
+      "matchedCategories": [
+        "foodTaboo",
+        "extremeThreat"
+      ],
+      "rumorFingerprint": [
+        "水果打甲醛",
+        "甲醛保鲜",
+        "致癌水果",
+        "甲醛浸泡",
+        "水果致癌"
+      ],
+      "truth": "合规果蔬保鲜使用的是国家标准允许的食品添加剂（如1-甲基环丙烯），并非甲醛。甲醛为明确禁用于食品的剧毒物质，正规商超与电商平台有严格抽检。国家从未发布'某水果致癌'的预警，'吃了致癌'属恐吓式伪科普。",
+      "sources": [
+        {
+          "id": "cfsa",
+          "url": "https://www.cfsa.net.cn",
+          "date": "2025-03-12",
+          "excerpt": "食品添加剂使用须符合 GB 2760，甲醛严禁用于食品"
+        },
+        {
+          "id": "kepuchina",
+          "url": "https://www.kepuchina.cn",
+          "date": "2025-06-01",
+          "excerpt": "'水果泡甲醛致癌'为常见谣言，缺乏科学依据"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-11"
+    },
+    {
+      "id": "food-incompatibility",
+      "matchedCategories": [
+        "foodTaboo"
+      ],
+      "rumorFingerprint": [
+        "食物相克",
+        "不能一起吃",
+        "吃了会中毒",
+        "同食致死",
+        "食物禁忌"
+      ],
+      "truth": "中国营养学会与多项研究早已证实：不存在所谓'食物相克'。食物没有绝对'不能吃'，只有摄入量与个人体质差异。极少数'同食不适'多为食物不洁、过敏或自身肠胃问题导致，并非'相克'。",
+      "sources": [
+        {
+          "id": "cnsoc",
+          "url": "https://www.cnsoc.org",
+          "date": "2024-09-20",
+          "excerpt": "食物相克说法缺乏科学证据，已被多次辟谣"
+        },
+        {
+          "id": "kepuchina",
+          "url": "https://www.kepuchina.cn",
+          "date": "2025-02-15",
+          "excerpt": "所谓'相克'多因食材不洁或个体过敏"
+        }
+      ],
+      "level": 2,
+      "lastVerified": "2026-07-11"
+    },
+    {
+      "id": "miracle-cure",
+      "matchedCategories": [
+        "healthPseudoscience"
+      ],
+      "rumorFingerprint": [
+        "包治百病",
+        "根治",
+        "一剂见效",
+        "祖传秘方治百病",
+        "永不复发",
+        "治愈率100%"
+      ],
+      "truth": "任何声称'包治百病''根治'的产品均属虚假宣传。现代医学中慢性病多需规范长期管理，不存在'神药'。购买药品/保健品请认准'国药准字'或'蓝帽子'标识，并通过正规医疗机构就诊，勿信民间偏方。",
+      "sources": [
+        {
+          "id": "nmpa",
+          "url": "https://www.nmpa.gov.cn",
+          "date": "2025-01-08",
+          "excerpt": "药品广告不得含有'根治''包治'等表示功效的断言"
+        },
+        {
+          "id": "nhc",
+          "url": "https://www.nhc.gov.cn",
+          "date": "2024-11-30",
+          "excerpt": "健康问题应前往正规医疗机构就诊"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-11"
+    },
+    {
+      "id": "ancient-doctor-secret",
+      "matchedCategories": [
+        "authorityImpersonation"
+      ],
+      "rumorFingerprint": [
+        "老中医秘方",
+        "华佗秘方",
+        "李时珍传下",
+        "央视报道过",
+        "祖传秘方",
+        "宫廷秘方"
+      ],
+      "truth": "正规医疗机构不会通过短视频/公众号推销'秘方'。所谓'华佗/李时珍秘方'等历史人物名义的偏方均不可考。'央视报道过'≠央视背书——电视台传播偏方不等于医学验证。购买前请核实'专家''协会'是否真实存在（可在国家卫健委/中华医学会官网查询）。",
+      "sources": [
+        {
+          "id": "nhc",
+          "url": "https://www.nhc.gov.cn",
+          "date": "2025-04-02",
+          "excerpt": "未备案的'秘方''神医'推销均属违规"
+        },
+        {
+          "id": "cma",
+          "url": "https://www.cma.org.cn",
+          "date": "2024-12-10",
+          "excerpt": "医师执业信息可在官方渠道核验"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-11"
+    },
+    {
+      "id": "organ-failure-fear",
+      "matchedCategories": [
+        "healthAnxiety"
+      ],
+      "rumorFingerprint": [
+        "器官正在衰竭",
+        "正在被掏空",
+        "再不养就来不及",
+        "你的XX正在求救",
+        "90%的人都缺",
+        "关乎寿命"
+      ],
+      "truth": "这是典型的'恐吓营销'：先制造健康焦虑，再顺势推销产品。正规营养补充应遵医嘱，不应被营销内容恐吓。身体真实状况需以医院检查报告为准，而非营销文案的'求救信号'。",
+      "sources": [
+        {
+          "id": "nhc",
+          "url": "https://www.nhc.gov.cn",
+          "date": "2025-05-18",
+          "excerpt": "警惕以健康恐吓为手段的商业推销"
+        },
+        {
+          "id": "kepuchina",
+          "url": "https://www.kepuchina.cn",
+          "date": "2025-03-22",
+          "excerpt": "'身体求救信号'类说法缺乏医学依据"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-11"
+    },
+    {
+      "id": "forward-for-reward",
+      "matchedCategories": [
+        "forwardInducement"
+      ],
+      "rumorFingerprint": [
+        "转发有礼",
+        "转发全家受益",
+        "转发朋友圈领",
+        "转满10个群领",
+        "集赞领福利"
+      ],
+      "truth": "'转发有礼'类内容是典型的商业推广信号，利用社交链低成本扩散。正规健康科普、政府通知不会以'转发领奖'为条件。此类链接常诱导填写个人信息，存在隐私泄露与诈骗风险，请勿转发、勿填信息。",
+      "sources": [
+        {
+          "id": "piyao",
+          "url": "https://www.piyao.org.cn",
+          "date": "2025-02-09",
+          "excerpt": "'转发领红包/礼品'多为营销或诈骗引流"
+        },
+        {
+          "id": "cca",
+          "url": "https://www.cca.cn",
+          "date": "2024-10-15",
+          "excerpt": "谨慎对待要求转发并填写个人信息的活动"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-11"
+    },
+    {
+      "id": "quantum-pseudoscience",
+      "matchedCategories": [
+        "quantumPseudoscience"
+      ],
+      "rumorFingerprint": [
+        "量子床垫",
+        "太赫兹理疗",
+        "量子治疗",
+        "细胞唤醒",
+        "宇宙能量",
+        "量子纠缠人体"
+      ],
+      "truth": "凡能在市面买到的'量子/太赫兹'养生、治疗产品，基本属伪科技。量子效应主要在微观尺度，无法直接用于宏观'治病'；'太赫兹理疗''宇宙能量'等缺乏医学证据。购买医疗器械请认准'械字号'并查询国家药监局备案。",
+      "sources": [
+        {
+          "id": "nmpa",
+          "url": "https://www.nmpa.gov.cn",
+          "date": "2025-06-30",
+          "excerpt": "宣称'量子''太赫兹'治病的产品多无合法资质"
+        },
+        {
+          "id": "kepuchina",
+          "url": "https://www.kepuchina.cn",
+          "date": "2025-01-25",
+          "excerpt": "'量子养生'是伪科学营销话术"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-11"
+    },
+    {
+      "id": "cancer-prevent-food",
+      "matchedCategories": [
+        "extremeThreat"
+      ],
+      "rumorFingerprint": [
+        "可能会失明",
+        "可能会致癌",
+        "防癌食谱",
+        "吃了癌细胞消失",
+        "食物致癌率",
+        "再吃就瞎"
+      ],
+      "truth": "单一食物既不会'致癌'也不会'防癌'，更不可能让'癌细胞消失'。极端后果声明（失明/瘫痪/致癌）是虚假恐吓的升级版，食物搭配不可能导致感官丧失或癌症。均衡饮食、定期体检才是科学做法。",
+      "sources": [
+        {
+          "id": "cma",
+          "url": "https://www.cma.org.cn",
+          "date": "2024-12-01",
+          "excerpt": "饮食与癌症为风险相关，非因果断言"
+        },
+        {
+          "id": "kepuchina",
+          "url": "https://www.kepuchina.cn",
+          "date": "2025-04-10",
+          "excerpt": "'某食物致癌/防癌'多为夸大"
+        }
+      ],
+      "level": 2,
+      "lastVerified": "2026-07-11"
+    },
+    {
+      "id": "ai-deepfake-commerce",
+      "matchedCategories": [
+        "aiDeepfakeCommerce"
+      ],
+      "rumorFingerprint": [
+        "AI换脸名医",
+        "数字人推荐",
+        "院士研发",
+        "专家代言卖货",
+        "合成主播带货"
+      ],
+      "truth": "AI 换脸/数字人冒充专家带货日益普遍。识别要点：检查口型是否同步、声音是否机械、同一'专家'是否出现在多个账号；正规医生不会在短视频卖保健品。凡要求'点击链接/加微信购买'的'专家推荐'务必警惕。",
+      "sources": [
+        {
+          "id": "piyao",
+          "url": "https://www.piyao.org.cn",
+          "date": "2025-07-05",
+          "excerpt": "警惕 AI 换脸冒充专家带货"
+        },
+        {
+          "id": "nmpa",
+          "url": "https://www.nmpa.gov.cn",
+          "date": "2025-03-19",
+          "excerpt": "药品医疗器械广告不得利用广告代言人作推荐"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-11"
+    },
+    {
+      "id": "medicare-benefit-scam",
+      "matchedCategories": [
+        "benefitScam"
+      ],
+      "rumorFingerprint": [
+        "Medicare福利",
+        "免费福利卡",
+        "你符合领取",
+        "grocery card",
+        "health allowance",
+        "flex card"
+      ],
+      "truth": "Medicare（美国联邦医保）绝不会主动联系你推销'新福利'。'免费购物卡/健康卡'是专门针对老年人的常见骗局。合法政府项目有固定开放期，不会用'立即行动'施压。切勿从社媒广告拨打陌生电话、提供个人信息。",
+      "sources": [
+        {
+          "id": "ftc",
+          "url": "https://www.ftc.gov",
+          "date": "2025-05-20",
+          "excerpt": "Medicare never contacts you unsolicited about new benefits"
+        },
+        {
+          "id": "fda",
+          "url": "https://www.fda.gov",
+          "date": "2024-11-12",
+          "excerpt": "'FDA-registered facility' ≠ 'FDA-approved product'"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-11"
+    },
+    {
+      "id": "high-yield-investment",
+      "matchedCategories": [
+        "cryptoScam",
+        "investmentScam"
+      ],
+      "rumorFingerprint": [
+        "稳赚不赔",
+        "年化20%以上",
+        "免费比特币",
+        "双倍返还",
+        "杀猪盘",
+        "内部消息炒股"
+      ],
+      "truth": "凡承诺'稳赚不赔''高收益零风险'的投资均为骗局。我国监管明确：年化收益率超过 8% 即应警惕，超过 20% 极大概率涉嫌非法集资/诈骗。'免费币''双倍返还'是典型资金盘话术，切勿转账给陌生地址或平台。",
+      "sources": [
+        {
+          "id": "mps",
+          "url": "https://www.mps.gov.cn",
+          "date": "2025-06-08",
+          "excerpt": "国家反诈中心提示：高收益零风险理财多为诈骗"
+        },
+        {
+          "id": "ftc",
+          "url": "https://www.ftc.gov",
+          "date": "2024-09-30",
+          "excerpt": "No legitimate investment 'doubles' your money"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-11"
+    },
+    {
+      "id": "side-hustle-get-rich",
+      "matchedCategories": [
+        "aiSideHustle",
+        "sideHustleVariant"
+      ],
+      "rumorFingerprint": [
+        "月入过万",
+        "零门槛副业",
+        "AI搞钱",
+        "小白也能",
+        "日入过千",
+        "被动收入"
+      ],
+      "truth": "'零门槛月入过万'多为卖课引流。正规副业需要技能积累，不存在'躺赚'。凡先要求'9.9 元体验课→升级高阶课→代理费'的阶梯收费，或要求'垫付货款/充值解冻'，基本是骗局。请通过正规招聘平台求职，勿信私域'导师'。",
+      "sources": [
+        {
+          "id": "cca",
+          "url": "https://www.cca.cn",
+          "date": "2025-04-28",
+          "excerpt": "警惕'零门槛高收入'副业培训陷阱"
+        },
+        {
+          "id": "mps",
+          "url": "https://www.mps.gov.cn",
+          "date": "2025-02-14",
+          "excerpt": "'垫付货款'类兼职多为刷单诈骗"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-11"
+    },
+    {
+      "id": "pension-new-rule",
+      "matchedCategories": [
+        "policyRumor",
+        "benefitScam"
+      ],
+      "rumorFingerprint": [
+        "养老金新规",
+        "养老金改革每月多发",
+        "退休年龄推迟补发",
+        "养老补贴申领"
+      ],
+      "truth": "养老金政策调整以人社部/民政部官方发布为准，凡'内部新规''限时点领'等话术多为引流或诈骗。正规调整不会要求先转账或提供银行卡密码。",
+      "sources": [
+        {
+          "id": "mca",
+          "url": "http://www.mca.gov.cn",
+          "date": "2025-03-10",
+          "excerpt": "养老金政策由官方统一发布，勿信非官方渠道"
+        },
+        {
+          "id": "xinhua",
+          "url": "http://www.news.cn",
+          "date": "2025-01-20",
+          "excerpt": "政策类信息以权威媒体/官网为准"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "only-child-fee",
+      "matchedCategories": [
+        "policyRumor"
+      ],
+      "rumorFingerprint": [
+        "独生子女补贴",
+        "独生子女费领取",
+        "国家发钱到卡",
+        "二孩三孩补贴"
+      ],
+      "truth": "独生子女/计生相关奖励由地方卫健与财政按规发放，不存在'全国统一私下打款'。凡要求点击链接填卡号领钱的，是诈骗引流。",
+      "sources": [
+        {
+          "id": "mca",
+          "url": "http://www.mca.gov.cn",
+          "date": "2025-02-11",
+          "excerpt": "补贴发放经正规渠道，不通过陌生链接"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "social-security-surcharge",
+      "matchedCategories": [
+        "benefitScam"
+      ],
+      "rumorFingerprint": [
+        "社保代缴",
+        "断缴一次性补缴",
+        "社保挂靠",
+        "补缴中介"
+      ],
+      "truth": "社保补缴须通过人社/税务官方渠道，所谓'代缴挂靠''一次性补缴'中介多涉违规甚至诈骗，可能造成资金损失与权益无效。",
+      "sources": [
+        {
+          "id": "mca",
+          "url": "http://www.mca.gov.cn",
+          "date": "2025-04-15",
+          "excerpt": "社保业务经官方渠道办理"
+        },
+        {
+          "id": "samr",
+          "url": "http://www.samr.gov.cn",
+          "date": "2024-11-08",
+          "excerpt": "警惕社保代缴骗局"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "credit-repair",
+      "matchedCategories": [
+        "benefitScam",
+        "financeScam"
+      ],
+      "rumorFingerprint": [
+        "征信修复",
+        "征信洗白",
+        "逾期记录消除",
+        "黑名单上岸"
+      ],
+      "truth": "征信记录由金融机构据实上报，任何机构或个人无权'修复/洗白'不良记录。凡收费删记录的均为诈骗。",
+      "sources": [
+        {
+          "id": "pbc",
+          "url": "http://www.pbc.gov.cn",
+          "date": "2025-05-22",
+          "excerpt": "征信修复是骗局，不良记录无法付费消除"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "pig-butchering",
+      "matchedCategories": [
+        "pigButchering",
+        "romanceScam"
+      ],
+      "rumorFingerprint": [
+        "杀猪盘",
+        "导师带单",
+        "恋爱理财",
+        "内部平台充值",
+        "群里晒收益"
+      ],
+      "truth": "先建立信任再诱导到'内部平台'投资的，是典型的杀猪盘。正规投资在持牌机构，凡'稳赚''群里晒单'基本是操控假盘。",
+      "sources": [
+        {
+          "id": "mps",
+          "url": "https://www.mps.gov.cn",
+          "date": "2025-06-08",
+          "excerpt": "国家反诈中心提示杀猪盘套路"
+        },
+        {
+          "id": "cac",
+          "url": "http://www.cac.gov.cn",
+          "date": "2025-03-01",
+          "excerpt": "警惕婚恋+投资复合诈骗"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "crypto-currency",
+      "matchedCategories": [
+        "cryptoScam"
+      ],
+      "rumorFingerprint": [
+        "虚拟货币投资",
+        "比特币暴富",
+        "央行数字货币推广",
+        "币圈内部盘"
+      ],
+      "truth": "虚拟货币相关业务在我国属非法金融活动，央行明确禁止交易平台为境内居民服务。'央行推广数字货币理财'是假借名头的诈骗。",
+      "sources": [
+        {
+          "id": "pbc",
+          "url": "http://www.pbc.gov.cn",
+          "date": "2024-12-01",
+          "excerpt": "虚拟货币交易炒作活动属非法金融活动"
+        },
+        {
+          "id": "ftc",
+          "url": "https://www.ftc.gov",
+          "date": "2024-09-30",
+          "excerpt": "Crypto 'investment' scams are widespread"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "original-stock",
+      "matchedCategories": [
+        "stockScam"
+      ],
+      "rumorFingerprint": [
+        "原始股",
+        "上市前入股",
+        "新三板原始股",
+        "内部股权"
+      ],
+      "truth": "未上市公司股权融资受严格监管，凡向不特定公众兜售'原始股''即将上市'多为非法集资。认购前查证监会核准与招股文件。",
+      "sources": [
+        {
+          "id": "csrc",
+          "url": "http://www.csrc.gov.cn",
+          "date": "2025-02-18",
+          "excerpt": "未经核准向不特定对象发行股票涉嫌非法"
+        },
+        {
+          "id": "xinhua",
+          "url": "http://www.news.cn",
+          "date": "2024-10-12",
+          "excerpt": "警惕原始股骗局"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "brush-order",
+      "matchedCategories": [
+        "brushScam"
+      ],
+      "rumorFingerprint": [
+        "刷单返利",
+        "垫付货款",
+        "兼职刷单",
+        "点赞返佣"
+      ],
+      "truth": "'刷单返利'是公安部公布的十大高发电诈之一：先小额返利诱导大额垫付，随后以'连单''保证金'为由卷款。刷单本身也违法违规。",
+      "sources": [
+        {
+          "id": "mps",
+          "url": "https://www.mps.gov.cn",
+          "date": "2025-02-14",
+          "excerpt": "垫付货款类兼职多为刷单诈骗"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "campus-loan",
+      "matchedCategories": [
+        "loanScam",
+        "educationScam"
+      ],
+      "rumorFingerprint": [
+        "校园贷",
+        "助学金到账",
+        "注销网贷账户",
+        "国家助学贷款代扣"
+      ],
+      "truth": "助学贷款/奖助学金经学校与官方银行发放，不存在'客服联系注销网贷账户'。凡要求转账'清零额度'的是诈骗。",
+      "sources": [
+        {
+          "id": "pbc",
+          "url": "http://www.pbc.gov.cn",
+          "date": "2025-04-09",
+          "excerpt": "助学贷款政策以官方为准"
+        },
+        {
+          "id": "moe",
+          "url": "http://www.moe.gov.cn",
+          "date": "2025-03-03",
+          "excerpt": "奖助学金经学校发放，不私下收款"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "forex-gold",
+      "matchedCategories": [
+        "forexScam"
+      ],
+      "rumorFingerprint": [
+        "外汇跟单",
+        "黄金原油平台",
+        "MT4黑平台",
+        "老师带单外汇"
+      ],
+      "truth": "外汇按金交易在我国受限，凡推介'MT4/MT5 黑平台''老师带单稳赚'多为对赌诈骗盘。正规渠道仅银行与持牌机构。",
+      "sources": [
+        {
+          "id": "pbc",
+          "url": "http://www.pbc.gov.cn",
+          "date": "2025-01-16",
+          "excerpt": "非法外汇平台风险提示"
+        },
+        {
+          "id": "csrc",
+          "url": "http://www.csrc.gov.cn",
+          "date": "2024-12-20",
+          "excerpt": "警惕非法期货/外盘诈骗"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "nft-collect",
+      "matchedCategories": [
+        "nftScam"
+      ],
+      "rumorFingerprint": [
+        "数字藏品",
+        "NFT暴涨",
+        "限量发售",
+        "二级市场溢价"
+      ],
+      "truth": "数字藏品/NFT 炒作风险极高，许多'限量发售''承诺回购'平台无资质，价格易被操纵、平台随时关停下架，属高风险投机。",
+      "sources": [
+        {
+          "id": "cac",
+          "url": "http://www.cac.gov.cn",
+          "date": "2025-05-30",
+          "excerpt": "警惕数字藏品炒作与诈骗"
+        },
+        {
+          "id": "samr",
+          "url": "http://www.samr.gov.cn",
+          "date": "2025-04-02",
+          "excerpt": "无资质发行交易多为违规"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "impersonate-police",
+      "matchedCategories": [
+        "impersonatePolice"
+      ],
+      "rumorFingerprint": [
+        "安全账户",
+        "通缉令",
+        "秘密配合",
+        "资金清查",
+        "公安局逮捕"
+      ],
+      "truth": "公检法机关绝不会通过电话/网络办案，更不存在'安全账户'。凡要求转账'自证清白''资金清查'的，100% 是冒充公检法诈骗，立即挂断并拨 96110。",
+      "sources": [
+        {
+          "id": "mps",
+          "url": "https://www.mps.gov.cn",
+          "date": "2025-06-08",
+          "excerpt": "公检法不电话办案、无安全账户"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "impersonate-cs",
+      "matchedCategories": [
+        "impersonateCS"
+      ],
+      "rumorFingerprint": [
+        "快递理赔",
+        "订单异常",
+        "百万保障",
+        "客服退款",
+        "误开会员"
+      ],
+      "truth": "'客服'主动联系退款/理赔/关闭会员，要求屏幕共享或下载会议软件的都是诈骗。正规平台退款原路返回，不要求提供验证码或转账。",
+      "sources": [
+        {
+          "id": "mps",
+          "url": "https://www.mps.gov.cn",
+          "date": "2025-03-19",
+          "excerpt": "冒充电商物流客服诈骗高发"
+        },
+        {
+          "id": "cac",
+          "url": "http://www.cac.gov.cn",
+          "date": "2025-02-08",
+          "excerpt": "不向客服提供验证码"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "impersonate-leader",
+      "matchedCategories": [
+        "impersonateBoss"
+      ],
+      "rumorFingerprint": [
+        "老板让我转账",
+        "亲戚借钱",
+        "新号码紧急用钱",
+        "在开会先转后说"
+      ],
+      "truth": "熟人/领导通过陌生号码或社交账号紧急借钱、要求转账，务必电话或当面核实身份。AI 换脸换声已能仿冒，不能仅凭音视频信任。",
+      "sources": [
+        {
+          "id": "mps",
+          "url": "https://www.mps.gov.cn",
+          "date": "2025-04-25",
+          "excerpt": "冒充领导熟人转账诈骗"
+        },
+        {
+          "id": "cac",
+          "url": "http://www.cac.gov.cn",
+          "date": "2025-03-15",
+          "excerpt": "AI 仿冒熟人需多重核实"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ai-voice-clone",
+      "matchedCategories": [
+        "aiVoiceClone"
+      ],
+      "rumorFingerprint": [
+        "语音借钱",
+        "声音克隆",
+        "AI换声借钱",
+        "熟人语音"
+      ],
+      "truth": "AI 语音克隆能高仿亲友声音借钱，仅凭一段语音不能轻信。涉及转账必须电话或当面确认，并约定只有彼此知道的暗号。",
+      "sources": [
+        {
+          "id": "mps",
+          "url": "https://www.mps.gov.cn",
+          "date": "2025-04-25",
+          "excerpt": "AI 换声冒充熟人借钱"
+        },
+        {
+          "id": "cac",
+          "url": "http://www.cac.gov.cn",
+          "date": "2025-03-15",
+          "excerpt": "声纹可伪造，需多重验证"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "ai-boss-transfer",
+      "matchedCategories": [
+        "aiBossScam"
+      ],
+      "rumorFingerprint": [
+        "领导语音转账",
+        "AI合成老板",
+        "视频会议诈骗",
+        "FaceTime老板"
+      ],
+      "truth": "诈骗分子用 AI 合成领导音视频，在'视频会议'中要求转账。务必通过已知官方号码线下核实，绝不按视频指令转账。",
+      "sources": [
+        {
+          "id": "mps",
+          "url": "https://www.mps.gov.cn",
+          "date": "2025-05-12",
+          "excerpt": "AI 合成领导指令转账诈骗"
+        },
+        {
+          "id": "cac",
+          "url": "http://www.cac.gov.cn",
+          "date": "2025-03-15",
+          "excerpt": "视频会议诈骗需线下核实"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "overseas-high-pay",
+      "matchedCategories": [
+        "overseasJobScam"
+      ],
+      "rumorFingerprint": [
+        "境外高薪",
+        "缅北招聘",
+        "园区上班",
+        "包吃住高薪"
+      ],
+      "truth": "'境外高薪、包吃住'常指向缅北等电诈园区，实为被控制了从事诈骗甚至遭受人身伤害。切勿轻信，勿持此类邀请出境。",
+      "sources": [
+        {
+          "id": "mps",
+          "url": "https://www.mps.gov.cn",
+          "date": "2025-06-01",
+          "excerpt": "境外高薪招聘多为电诈园区诱骗"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "phishing-code",
+      "matchedCategories": [
+        "phishingScam"
+      ],
+      "rumorFingerprint": [
+        "屏幕共享",
+        "验证码别告诉",
+        "钓鱼链接",
+        "核验码",
+        "FaceTime验证码"
+      ],
+      "truth": "验证码=转账密码，任何索要验证码、要求开屏幕共享/ FaceTime 的'客服''熟人'都是诈骗。银行/官方绝不会要你的验证码。",
+      "sources": [
+        {
+          "id": "mps",
+          "url": "https://www.mps.gov.cn",
+          "date": "2025-03-19",
+          "excerpt": "验证码绝不透露"
+        },
+        {
+          "id": "cac",
+          "url": "http://www.cac.gov.cn",
+          "date": "2025-02-08",
+          "excerpt": "屏幕共享是诈骗常用手段"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "nude-extort",
+      "matchedCategories": [
+        "sextortion"
+      ],
+      "rumorFingerprint": [
+        "裸聊",
+        "QQ裸聊",
+        "威胁发通讯录",
+        "视频敲诈"
+      ],
+      "truth": "裸聊敲诈先诱导露脸录像，再以'发给通讯录'勒索。勿转账（越转越多），保留证据并立即报警/拨 96110。",
+      "sources": [
+        {
+          "id": "mps",
+          "url": "https://www.mps.gov.cn",
+          "date": "2025-05-18",
+          "excerpt": "裸聊敲诈勒索报警处理"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "game-trade-scam",
+      "matchedCategories": [
+        "gameScam"
+      ],
+      "rumorFingerprint": [
+        "游戏装备交易",
+        "账号回收",
+        "低价点券",
+        "交易平台充值"
+      ],
+      "truth": "游戏账号/装备交易走非官方'交易平台'充值解冻，多为诈骗。交易只认官方渠道，陌生人发来的'平台'链接勿信。",
+      "sources": [
+        {
+          "id": "mps",
+          "url": "https://www.mps.gov.cn",
+          "date": "2025-04-02",
+          "excerpt": "游戏交易诈骗高发，认准官方"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "fake-charity",
+      "matchedCategories": [
+        "fakeCharity"
+      ],
+      "rumorFingerprint": [
+        "转发筹款",
+        "冒充募捐",
+        "水滴筹盗用",
+        "爱心助力"
+      ],
+      "truth": "借灾情/疾病冒充公益募捐、盗用筹款链接是常见诈骗。捐款认准红会/慈善会官方渠道，不向个人陌生账户转'善款'。",
+      "sources": [
+        {
+          "id": "mps",
+          "url": "https://www.mps.gov.cn",
+          "date": "2025-06-10",
+          "excerpt": "警惕冒充公益募捐诈骗"
+        },
+        {
+          "id": "cac",
+          "url": "http://www.cac.gov.cn",
+          "date": "2025-04-20",
+          "excerpt": "认准官方慈善渠道"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "refund-claim",
+      "matchedCategories": [
+        "refundScam"
+      ],
+      "rumorFingerprint": [
+        "退税到账",
+        "社保退款",
+        "补贴申领链接",
+        "工资补贴"
+      ],
+      "truth": "'退税/补贴到账'短信带链接要求填银行卡，是钓鱼+盗刷。退税通过官方 App/网站办理，补贴经单位/社区发放，不点陌生链接。",
+      "sources": [
+        {
+          "id": "samr",
+          "url": "http://www.samr.gov.cn",
+          "date": "2025-03-11",
+          "excerpt": "警惕退税补贴钓鱼"
+        },
+        {
+          "id": "mps",
+          "url": "https://www.mps.gov.cn",
+          "date": "2025-02-20",
+          "excerpt": "补贴类短信多为诈骗"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "stem-cell",
+      "matchedCategories": [
+        "healthPseudoscience"
+      ],
+      "rumorFingerprint": [
+        "干细胞治疗",
+        "免疫细胞疗法",
+        "抗衰老针",
+        "回输干细胞"
+      ],
+      "truth": "除极少数国家批准临床试验外，市面'干细胞/免疫细胞抗衰老治病'基本无合法资质且缺乏证据。治疗疾病请到正规医院。",
+      "sources": [
+        {
+          "id": "nmpa",
+          "url": "https://www.nmpa.gov.cn",
+          "date": "2025-06-30",
+          "excerpt": "干细胞疗法须合规批准"
+        },
+        {
+          "id": "nhc",
+          "url": "https://www.nhc.gov.cn",
+          "date": "2025-02-18",
+          "excerpt": "警惕干细胞养生骗局"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "acid-base-body",
+      "matchedCategories": [
+        "healthPseudoscience"
+      ],
+      "rumorFingerprint": [
+        "酸性体质",
+        "碱性食物防癌",
+        "酸碱平衡",
+        "体质偏酸"
+      ],
+      "truth": "'酸碱体质'是已被证伪的伪科学，人体酸碱由肺肾精密调节，食物无法改变血液酸碱度。",
+      "sources": [
+        {
+          "id": "cnsoc",
+          "url": "https://www.cnsoc.org",
+          "date": "2024-09-20",
+          "excerpt": "酸碱体质说无科学依据"
+        },
+        {
+          "id": "cfsa",
+          "url": "https://www.cfsa.net.cn",
+          "date": "2025-01-09",
+          "excerpt": "食物不改性血液酸碱"
+        }
+      ],
+      "level": 2,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "health-product-cure",
+      "matchedCategories": [
+        "healthPseudoscience"
+      ],
+      "rumorFingerprint": [
+        "保健品治百病",
+        "调理根治",
+        "经络排毒",
+        "包治慢性病"
+      ],
+      "truth": "保健品不是药品，不得宣称治疗功效。凡'调理根治'慢性病、替代正规治疗的，均违规且危险。",
+      "sources": [
+        {
+          "id": "nmpa",
+          "url": "https://www.nmpa.gov.cn",
+          "date": "2025-06-30",
+          "excerpt": "保健品不得宣称治疗功效"
+        },
+        {
+          "id": "cca",
+          "url": "https://www.cca.cn",
+          "date": "2024-10-15",
+          "excerpt": "警惕保健品虚假宣传"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "myopia-cure",
+      "matchedCategories": [
+        "healthPseudoscience"
+      ],
+      "rumorFingerprint": [
+        "近视治愈",
+        "降低度数",
+        "摘镜训练",
+        "治愈近视"
+      ],
+      "truth": "真性近视不可逆，目前无任何方法'治愈'近视。宣称'降度数/摘镜'的仪器训练多无效，防近视靠科学用眼与医学矫正。",
+      "sources": [
+        {
+          "id": "nmpa",
+          "url": "https://www.nmpa.gov.cn",
+          "date": "2025-03-22",
+          "excerpt": "近视不可逆，治疗须合规"
+        },
+        {
+          "id": "cma",
+          "url": "https://www.cma.org.cn",
+          "date": "2024-12-01",
+          "excerpt": "近视防控靠医学手段"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "height-increase",
+      "matchedCategories": [
+        "healthPseudoscience"
+      ],
+      "rumorFingerprint": [
+        "增高药",
+        "二次长高",
+        "生长激素助长",
+        "骨骼再生"
+      ],
+      "truth": "骨骺闭合后身高无法再增长，'增高药/二次长高'是虚假宣传。生长激素仅用于特定缺乏症，须医生处方。",
+      "sources": [
+        {
+          "id": "nhc",
+          "url": "https://www.nhc.gov.cn",
+          "date": "2025-01-30",
+          "excerpt": "身高由遗传与发育决定"
+        },
+        {
+          "id": "cma",
+          "url": "https://www.cma.org.cn",
+          "date": "2024-11-20",
+          "excerpt": "增高产品多无效"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "vaccine-rumor",
+      "matchedCategories": [
+        "healthRumor"
+      ],
+      "rumorFingerprint": [
+        "疫苗致残",
+        "不打疫苗",
+        "疫苗含芯片",
+        "疫苗改变基因"
+      ],
+      "truth": "获批疫苗经过严格临床试验与监测，'含芯片/改变基因'等属阴谋论。接种获益远大于罕见不良反应风险，信息以卫健委/WHO 为准。",
+      "sources": [
+        {
+          "id": "nhc",
+          "url": "https://www.nhc.gov.cn",
+          "date": "2025-05-10",
+          "excerpt": "疫苗接种获益明确"
+        },
+        {
+          "id": "who",
+          "url": "https://www.who.int",
+          "date": "2024-10-01",
+          "excerpt": "Vaccines are safe and effective"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "cerebral-palsy-cure",
+      "matchedCategories": [
+        "healthPseudoscience"
+      ],
+      "rumorFingerprint": [
+        "脑瘫康复",
+        "干细胞治脑瘫",
+        "祖传治瘫",
+        "一疗程见效"
+      ],
+      "truth": "脑瘫为永久性运动障碍，无法'根治'。凡'干细胞/祖传一疗程治愈'是虚假宣传，正规康复需长期医学训练。",
+      "sources": [
+        {
+          "id": "nhc",
+          "url": "https://www.nhc.gov.cn",
+          "date": "2025-02-12",
+          "excerpt": "脑瘫需长期康复，无根治法"
+        },
+        {
+          "id": "cma",
+          "url": "https://www.cma.org.cn",
+          "date": "2024-12-08",
+          "excerpt": "警惕脑瘫骗局"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "plastic-rice",
+      "matchedCategories": [
+        "foodRumor"
+      ],
+      "rumorFingerprint": [
+        "塑料大米",
+        "人造鸡蛋",
+        "注水管",
+        "假鸡蛋"
+      ],
+      "truth": "'塑料大米/人造鸡蛋'是反复出现的谣言，生产成本高于真品且无法食用，现实中不成立。食品安全以监管部门抽检为准。",
+      "sources": [
+        {
+          "id": "cfsa",
+          "url": "https://www.cfsa.net.cn",
+          "date": "2025-02-14",
+          "excerpt": "塑料大米为谣言"
+        },
+        {
+          "id": "kepuchina",
+          "url": "https://www.kepuchina.cn",
+          "date": "2025-01-16",
+          "excerpt": "人造鸡蛋不实"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "watermelon-injection",
+      "matchedCategories": [
+        "foodRumor"
+      ],
+      "rumorFingerprint": [
+        "打针西瓜",
+        "激素西瓜",
+        "膨大剂致癌",
+        "西瓜注红"
+      ],
+      "truth": "西瓜使用合法植物生长调节剂（如氯吡脲）在安全剂量内，不致癌。'打针西瓜'多为视觉误读，监管有残留限量标准。",
+      "sources": [
+        {
+          "id": "cfsa",
+          "url": "https://www.cfsa.net.cn",
+          "date": "2025-03-18",
+          "excerpt": "西瓜用药合规即可食用"
+        },
+        {
+          "id": "kepuchina",
+          "url": "https://www.kepuchina.cn",
+          "date": "2025-02-09",
+          "excerpt": "膨大剂不致癌"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "5g-virus",
+      "matchedCategories": [
+        "techPseudoscience"
+      ],
+      "rumorFingerprint": [
+        "5G传播病毒",
+        "基站辐射致癌",
+        "信号塔有害",
+        "5G致新冠"
+      ],
+      "truth": "5G 属非电离辐射，能量远低于可见光，无证据致新冠或癌症。基站辐射符合国标，远低于有害阈值。",
+      "sources": [
+        {
+          "id": "who",
+          "url": "https://www.who.int",
+          "date": "2024-10-01",
+          "excerpt": "5G non-ionizing, no evidence of harm"
+        },
+        {
+          "id": "kepuchina",
+          "url": "https://www.kepuchina.cn",
+          "date": "2025-01-22",
+          "excerpt": "基站辐射在安全范围"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "water-to-oil",
+      "matchedCategories": [
+        "techPseudoscience"
+      ],
+      "rumorFingerprint": [
+        "水变油",
+        "永动机",
+        "免费能源",
+        "能量凭空产生"
+      ],
+      "truth": "'水变油/永动机'违背能量守恒，是经典伪科学。凡声称突破物理定律的'新能源'项目多为融资骗局。",
+      "sources": [
+        {
+          "id": "kepuchina",
+          "url": "https://www.kepuchina.cn",
+          "date": "2025-03-01",
+          "excerpt": "水变油永动机属伪科学"
+        }
+      ],
+      "level": 2,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "graphene-health",
+      "matchedCategories": [
+        "quantumPseudoscience"
+      ],
+      "rumorFingerprint": [
+        "石墨烯养生",
+        "石墨烯内衣",
+        "石墨烯口罩",
+        "石墨烯能量"
+      ],
+      "truth": "石墨烯在材料领域有价值，但'石墨烯养生/治病'缺乏医学证据，相关保健产品多为营销概念。",
+      "sources": [
+        {
+          "id": "nmpa",
+          "url": "https://www.nmpa.gov.cn",
+          "date": "2025-06-30",
+          "excerpt": "石墨烯保健宣称多无资质"
+        },
+        {
+          "id": "kepuchina",
+          "url": "https://www.kepuchina.cn",
+          "date": "2025-01-25",
+          "excerpt": "石墨烯养生是概念营销"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "quantum-speed-read",
+      "matchedCategories": [
+        "educationPseudoscience"
+      ],
+      "rumorFingerprint": [
+        "量子波动速读",
+        "右脑开发",
+        "蒙眼识字",
+        "全脑通"
+      ],
+      "truth": "'量子波动速读/蒙眼识字'是被多次揭批的伪科学，违背认知规律。阅读靠系统学习，不存在'快速成像'。",
+      "sources": [
+        {
+          "id": "moe",
+          "url": "http://www.moe.gov.cn",
+          "date": "2025-02-20",
+          "excerpt": "量子波动速读是伪科学"
+        },
+        {
+          "id": "kepuchina",
+          "url": "https://www.kepuchina.cn",
+          "date": "2025-03-10",
+          "excerpt": "右脑开发无依据"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "internet-addiction-shock",
+      "matchedCategories": [
+        "educationPseudoscience"
+      ],
+      "rumorFingerprint": [
+        "戒网瘾",
+        "电击治疗",
+        "杨永信",
+        "强制戒网"
+      ],
+      "truth": "以'电击/体罚'戒网瘾已被官方叫停并查处，属侵害人权。网络使用问题应科学引导，必要时求助正规心理机构。",
+      "sources": [
+        {
+          "id": "nhc",
+          "url": "https://www.nhc.gov.cn",
+          "date": "2025-01-15",
+          "excerpt": "戒网瘾 abusive 手段被禁"
+        },
+        {
+          "id": "moe",
+          "url": "http://www.moe.gov.cn",
+          "date": "2024-12-11",
+          "excerpt": "引导为主，禁虐待"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "exam-answer",
+      "matchedCategories": [
+        "examScam"
+      ],
+      "rumorFingerprint": [
+        "考试内部答案",
+        "改分",
+        "保过班",
+        "包过协议"
+      ],
+      "truth": "'内部答案/改分/包过'均为诈骗或违规。考试公平受法律保障，凡收费泄题涉刑，保过班多为虚假承诺。",
+      "sources": [
+        {
+          "id": "moe",
+          "url": "http://www.moe.gov.cn",
+          "date": "2025-03-08",
+          "excerpt": "考试泄题属犯罪"
+        },
+        {
+          "id": "mps",
+          "url": "https://www.mps.gov.cn",
+          "date": "2025-04-30",
+          "excerpt": "考试包过诈骗"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "early-ed-scam",
+      "matchedCategories": [
+        "educationPseudoscience"
+      ],
+      "rumorFingerprint": [
+        "全脑开发",
+        "早教智商",
+        "右脑潜能",
+        "天赋基因检测"
+      ],
+      "truth": "'全脑开发/天赋基因检测提智商'缺乏科学依据。早教重在陪伴与习惯，警惕高价'潜能'课程。",
+      "sources": [
+        {
+          "id": "moe",
+          "url": "http://www.moe.gov.cn",
+          "date": "2025-02-20",
+          "excerpt": "早教应避免伪科学宣传"
+        }
+      ],
+      "level": 2,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "house-pension",
+      "matchedCategories": [
+        "elderlyScam"
+      ],
+      "rumorFingerprint": [
+        "以房养老",
+        "房产抵押养老",
+        "理财养老",
+        "房屋反向抵押"
+      ],
+      "truth": "正规'以房养老'保险限特定机构，凡诱导抵押房产给非持牌公司理财、承诺高息的，是房产诈骗，可能导致无家可归。",
+      "sources": [
+        {
+          "id": "mca",
+          "url": "http://www.mca.gov.cn",
+          "date": "2025-03-12",
+          "excerpt": "以房养老须认准正规保险"
+        },
+        {
+          "id": "pbc",
+          "url": "http://www.pbc.gov.cn",
+          "date": "2025-01-20",
+          "excerpt": "房产抵押理财风险高"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "health-meeting",
+      "matchedCategories": [
+        "elderlyScam"
+      ],
+      "rumorFingerprint": [
+        "免费体检",
+        "健康讲座",
+        "旅游会销",
+        "专家面对面"
+      ],
+      "truth": "'免费体检+讲座+旅游'是保健品会销引流套路，现场'专家'多为演员，目的在于高价卖产品。体检去正规医院。",
+      "sources": [
+        {
+          "id": "cca",
+          "url": "https://www.cca.cn",
+          "date": "2024-10-15",
+          "excerpt": "警惕会销保健品陷阱"
+        },
+        {
+          "id": "nmpa",
+          "url": "https://www.nmpa.gov.cn",
+          "date": "2025-06-30",
+          "excerpt": "会销保健品多虚假宣传"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "collection-invest",
+      "matchedCategories": [
+        "elderlyScam"
+      ],
+      "rumorFingerprint": [
+        "纪念币投资",
+        "字画升值",
+        "藏品回购",
+        "艺术品理财"
+      ],
+      "truth": "'限量纪念币/字画承诺回购升值'多针对老年人，实际溢价虚高、无处变现。投资藏品认准正规机构，不信'稳赚回购'。",
+      "sources": [
+        {
+          "id": "samr",
+          "url": "http://www.samr.gov.cn",
+          "date": "2025-04-02",
+          "excerpt": "收藏品投资诈骗高发"
+        },
+        {
+          "id": "mca",
+          "url": "http://www.mca.gov.cn",
+          "date": "2025-03-12",
+          "excerpt": "老年人藏品理财需谨慎"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "elderly-dating",
+      "matchedCategories": [
+        "elderlyScam",
+        "romanceScam"
+      ],
+      "rumorFingerprint": [
+        "黄昏恋",
+        "广场舞交友",
+        "老年相亲",
+        "丧偶征婚"
+      ],
+      "truth": "针对老年人的'黄昏恋'交友，常以感情建立信任后诱导投资/借钱，是情感+钱财复合诈骗。网恋涉及钱务必警惕。",
+      "sources": [
+        {
+          "id": "mps",
+          "url": "https://www.mps.gov.cn",
+          "date": "2025-05-20",
+          "excerpt": "老年人交友诈骗频发"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "deepfake-porn-extort",
+      "matchedCategories": [
+        "aiDeepfake"
+      ],
+      "rumorFingerprint": [
+        "AI合成不雅",
+        "换脸敲诈",
+        "合成视频勒索",
+        "AI脱衣"
+      ],
+      "truth": "利用 AI 合成不雅视频敲诈属犯罪。遭遇立即保留证据并报警/拨 96110，切勿转账。",
+      "sources": [
+        {
+          "id": "cac",
+          "url": "http://www.cac.gov.cn",
+          "date": "2025-04-18",
+          "excerpt": "AI 合成不雅勒索依法严打"
+        },
+        {
+          "id": "mps",
+          "url": "https://www.mps.gov.cn",
+          "date": "2025-05-12",
+          "excerpt": "合成勒索报警处理"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "part-time-train",
+      "matchedCategories": [
+        "aiSideHustle"
+      ],
+      "rumorFingerprint": [
+        "9.9体验课",
+        "代理费",
+        "阶梯收费",
+        "知识付费割韭菜",
+        "小白副业"
+      ],
+      "truth": "'9.9 体验课→高阶课→代理费'阶梯收费是常见割韭菜模式。正规副业需技能，凡先交钱'带你赚'多需警惕。",
+      "sources": [
+        {
+          "id": "cca",
+          "url": "https://www.cca.cn",
+          "date": "2025-04-28",
+          "excerpt": "警惕零门槛高收入培训陷阱"
+        },
+        {
+          "id": "mps",
+          "url": "https://www.mps.gov.cn",
+          "date": "2025-02-14",
+          "excerpt": "垫付/代理费类多为诈骗"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-07-29"
+    },
+    {
+      "id": "brand-impersonation-download-site",
+      "matchedCategories": [
+        "brandImpersonationSite",
+        "fakeDownloadSite",
+        "searchAdHijack"
+      ],
+      "rumorFingerprint": [
+        "山寨官网",
+        "高仿域名",
+        "搜索品牌词弹广告",
+        "开源软件收费安装器",
+        "仿冒下载站",
+        "品牌词竞价劫持",
+        "theopenclaw.cn",
+        "openclaw 安装器"
+      ],
+      "truth": "正规软件与开源项目均有唯一官方域名（如 OpenClaw 官网为 openclaw.ai）。凡搜索品牌词（codex、openclaw 等）在搜索引擎置顶弹出、使用高仿域名（如 theopenclaw.cn 仿 openclaw.ai）、诱导下载'安装器'甚至为免费开源软件收费的站点，均属山寨/仿冒下载站，可能捆绑木马或骗取费用。认准官方域名、不点搜索广告、安装前用杀毒软件查杀；已中招立即拨 96110。",
+      "sources": [
+        {
+          "id": "mps",
+          "url": "https://www.96110.cn",
+          "date": "2026-08-17",
+          "excerpt": "国家反诈中心持续警示：高仿域名仿冒官方软件/平台、搜索引擎品牌词置顶广告引流的钓鱼下载链接风险极高，应通过官方渠道核实、不点击来路不明下载链接"
+        },
+        {
+          "id": "cca",
+          "url": "https://www.cca.cn",
+          "date": "2026-08-17",
+          "excerpt": "中国消费者协会提示：为免费开源软件付费的'安装器''部署工具'多为消费陷阱，注意辨别仿冒网站与虚假优惠"
+        }
+      ],
+      "level": 1,
+      "lastVerified": "2026-08-17"
+    }
+  ]
+}

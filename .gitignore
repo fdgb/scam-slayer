@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
+
+# Old packaging artifacts
+*.zip
+*.bak
+
+# Secrets / credentials (NEVER commit)
+.bili_cookie
+.env
+*.cookie
+config/bilibili.json
+
+# Internal operational queues / training intermediates (NEVER commit — contains
+# user-submitted feedback + internal stats, PII risk). Real copy lives in the
+# user-skill (~/.workbuddy/skills/scam-slayer/references/collected_data), local only.
+references/collected_data/
+collected_data/
+
+# Internal staging / ops ledgers (local only, never push to public repo)
+pending_samples.md
+INGESTION-LEDGER.md
+*_backlog_preview.csv
+
+# 核心护城河：case-library.md（B线「学习」产物 / 累积鉴别案例）
+# 这是我们的核心竞争壁垒，绝不进公开仓库(GitHub) / 不进 Coze·SkillHub 下载包。
+# 仅保留在 本地 user-skill + 线上后端(zyj-scamslayer.cn) 供我们自己的鉴别引擎 RAG 检索。
+# 注：data/case-library.md 本地仍保留（sync_web 会 scp 到线上后端），只是不提交到 GitHub。
+case-library.md

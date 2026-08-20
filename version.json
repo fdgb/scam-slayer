@@ -1,0 +1,131 @@
+{
+  "version": "v2026.08.20.1",
+  "updated_at": "2026-08-20T02:50:57.974847+00:00",
+  "file_count": 29,
+  "files": {
+    "2026-07-20-collected-cases.md": {
+      "sha256": "100b02cc2e207beed430e347768c0d651b1124ffbbe1619f6e400e0809b6b1bd",
+      "bytes": 22560
+    },
+    "2026-07-20-seedaudio-fake-domain.md": {
+      "sha256": "d604666303141c90b514128877ef93991c1501ae913f55b3027f63a86a77e2f2",
+      "bytes": 3818
+    },
+    "2026-07-22-collected-cases.md": {
+      "sha256": "2df828eaa974cedd7d88df45dca692e8abb799c3c7512ac1feacd6e945f41056",
+      "bytes": 19260
+    },
+    "2026-07-23-collected-cases.md": {
+      "sha256": "4ccfb24684d231c2d5fedcee146d638408a17c768be96b387b8c1bc5303be018",
+      "bytes": 6768
+    },
+    "2026-07-25-collected-cases.md": {
+      "sha256": "b9b3fe884d297e5580459cd69007ad6b487d6c2912221c45ef67206caa5bce23",
+      "bytes": 3487
+    },
+    "2026-07-26-collected-cases.md": {
+      "sha256": "bed9eca0817144dd4d31efb231ce1a021bd962fad6bb8fe7c65d21061887cede",
+      "bytes": 2856
+    },
+    "2026-07-27-collected-cases.md": {
+      "sha256": "2410bfa2848b3202faad3c557e989320d20d4d5b5268fff88fb7379ef89295c2",
+      "bytes": 7771
+    },
+    "2026-07-27-promoted.md": {
+      "sha256": "c9103f01e8a8562ddb371fd3dd7633bd46f59b02f6a8b433625ffb56e4788ba0",
+      "bytes": 38039
+    },
+    "2026-07-28-collected-cases.md": {
+      "sha256": "4f626de062fb98ff339f10f8eb2b4cd64fd9440fe21fb41d00e2661cafd543d0",
+      "bytes": 8624
+    },
+    "2026-07-29-collected-cases.md": {
+      "sha256": "67af9d28b818c4a0e7a41c69b11271e4618d0db67e9262765446b268f0549a9e",
+      "bytes": 9347
+    },
+    "2026-07-30-collected-cases.md": {
+      "sha256": "3a9731ba2594b8c3f91ecf44d72ad081f89a882de948f7acbe9d7ee54c1b53c8",
+      "bytes": 11344
+    },
+    "2026-08-01-collected-cases.md": {
+      "sha256": "a63ef83e5675c0fae6c2ac83041e231af2a7ca500bde916447da196c745e6e56",
+      "bytes": 5390
+    },
+    "2026-08-01-run14-cases.md": {
+      "sha256": "dfbeec43a1c556f7beee48c8f3070ecfa582e252ca9c3fbc6b3ea0d6fbe150aa",
+      "bytes": 12678
+    },
+    "2026-08-05-collected-cases.md": {
+      "sha256": "85e985de3cda941ac34298c6e74559e4e937c878aba5255d860e2e9c8cfa1283",
+      "bytes": 6214
+    },
+    "2026-08-06-collected-cases.md": {
+      "sha256": "d4c60423ee7c3841449ac15bd829b7dd7a1b1e20aa5f6db2738a1a5157009a54",
+      "bytes": 3018
+    },
+    "2026-08-07-collected-cases.md": {
+      "sha256": "ca5f8a32666f035dc26fbde42152f33bea35b6d52d60a2611ff030d77cdc271b",
+      "bytes": 6026
+    },
+    "2026-08-10-collected-cases.md": {
+      "sha256": "d858a1e463a36756227d64e5e9986f6be7602926d9c6df9c0c25350867eacac6",
+      "bytes": 4728
+    },
+    "2026-08-10-promoted.md": {
+      "sha256": "a5947c2cce248774057478683a8ebedd1658aa74c25d3d5dc8e51f1c95e721de",
+      "bytes": 12695
+    },
+    "2026-08-11-collected-cases.md": {
+      "sha256": "4b5faff28b50b0b88848d81ee98ce384b1f4a64aa2143b76ddd2b8b3b51fe886",
+      "bytes": 6177
+    },
+    "2026-08-12-collected-cases.md": {
+      "sha256": "f079035c4f102424b214c502f41c70de4fc4f83c203b197b064f8c238871a073",
+      "bytes": 3370
+    },
+    "2026-08-12-reviewed.md": {
+      "sha256": "88f1c8abe7344fb760456c9f4780d7d8d9a71bdb9364704d44ae6fd17dab5cea",
+      "bytes": 6905
+    },
+    "2026-08-17-promoted.md": {
+      "sha256": "258fb69e3eab116180b81959bebd201592d4b5a6c7f25e315cba94a5c35292ec",
+      "bytes": 11384
+    },
+    "2026-08-17-reviewed.md": {
+      "sha256": "94d1fcc1c31b7a6dbcc736e4b69cc0cfdd72eae89aa119e5b978c84713512c2e",
+      "bytes": 17750
+    },
+    "case-library.md": {
+      "sha256": "ea0ad26713bb10461635fdf84cec4c6bd7f68ff40458e0bda25a2a7981d5605b",
+      "bytes": 1607010
+    },
+    "elderly-guide.md": {
+      "sha256": "31e00597440697d5911e3d0d8b8a14d67356b7c6f85cf3a1c786c2c673cb7dbf",
+      "bytes": 4745
+    },
+    "patterns.md": {
+      "sha256": "7ef6db79eea57327aa0179949359c2ab5fb79f5826b4fbd2bfe20f79edcf4b35",
+      "bytes": 192281
+    },
+    "phone-scam.md": {
+      "sha256": "f3c562fc250974951f4681b98457a238b5605d2293bd4f67b73289f304a318e9",
+      "bytes": 10159
+    },
+    "rumor-library.md": {
+      "sha256": "a60404fa9f0d35ea38f9be29158bd59c24bd10f4fda8dbdf7b83a0ba23ba7d1a",
+      "bytes": 49020
+    },
+    "wechat-patterns.md": {
+      "sha256": "b7c31b1c78ceea7319b522d2885aab85f7f7dbb1f38da95e8063d6ac8050184a",
+      "bytes": 7131
+    }
+  },
+  "changelog": "auto-built with quality gate",
+  "quality_gate": {
+    "status": "NEEDS_REVIEW",
+    "passed": 0,
+    "warnings": 0,
+    "fact_check_needed": 29,
+    "duplicates_flagged": 0
+  }
+}
